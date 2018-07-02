@@ -6,7 +6,7 @@
 
     $body = "I think you're great!";
 
-    $headers = "From: rob@robpercival.co.uk";
+    $headers = "From: yaroslavv@gmail.com";
 
     if (mail($emailTo, $subject, $body, $headers)) {
         
