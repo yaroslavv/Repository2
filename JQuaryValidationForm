@@ -75,7 +75,17 @@ html>
     </head>
 
     <body>
-        
+        <form method="post">
+
+    <p>What is your name?</p>
+    
+    <p><input type="text" name="name"></p>
+    
+    <p><input type="submit" value="Submit"></p>
+
+
+</form>
+
         <div id="wrapper">
             
             <div id="successMessage">You've done it! Congratulations.</div>
@@ -231,18 +241,21 @@ html>
         
     }
 
-
+    $emailTo = "";
+    $subject = "I hope this works!";
+    $body = "I think you're great!";
+    $headers = "From: yaroslavv@gmail.com";
+    if (mail($emailTo, $subject, $body, $headers)) {
+        
+        echo "The email was sent successfully";
+        
+    } else {
+        
+        echo "The email could not be sent.";
+        
+    }
 ?>
 
 
 
-<form method="post">
 
-    <p>What is your name?</p>
-    
-    <p><input type="text" name="name"></p>
-    
-    <p><input type="submit" value="Submit"></p>
-
-
-</form>
