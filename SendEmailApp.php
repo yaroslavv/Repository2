@@ -28,7 +28,6 @@ if(array_key_exists('callback', $_GET)){
 
     echo json_encode($result);
 }
-<?php
     $emailTo = "";
     $subject = "I hope this works!";
     $body = "I think you're great!";
@@ -42,7 +41,4 @@ if(array_key_exists('callback', $_GET)){
         echo "The email could not be sent.";
         
     }
-?>
-
-
 ?>
