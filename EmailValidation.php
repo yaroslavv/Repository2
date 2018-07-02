@@ -34,7 +34,7 @@
             
         } else {
             
-            $emailTo = "me@mydomain.com";
+            $emailTo = "me@mydomain.com";// Domain requires change on a live website to prevent error
             
             $subject = $_POST['subject'];
             
