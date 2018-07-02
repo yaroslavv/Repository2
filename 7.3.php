@@ -1,6 +1,6 @@
 <?php
 
-$name = "Yaro";
+$name = "Yaro";//variable initialization
 
 echo "<p>My name is $name</p>";
 
